@@ -24,19 +24,125 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <form
         id="form1"
         style="display: flex; flex-direction: column; align-items: center"
       >
-        <label for="name">Name:</label>
+        <label for="name">😜Name:</label>
         <input name="name" type="text" placeholder="Write Something..." />
-        <label for="age">Age:</label>
-        <input name="age" type="number" />
+        <label for="age">👌Age:</label>
+        <input name="age" type="number" required />
         <label for="comentario">comentario:</label>
         <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-        <input type="button" value="SUBMETER FORM" />
+        <input type="submit" value="SUBMETER FORM" />
       </form>
+
+      <form id="myForm" action="">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="formName">Nome:</label>
+          <input
+            id="formName"
+            name="formName"
+            type="text"
+            value="Default Name"
+            required
+          />
+          <br />
+          <label for="formAge">Idade:</label>
+          <input
+            id="formAge"
+            name="formAge"
+            type="number"
+            min="0"
+            max="120"
+            step="1"
+            placeholder="Escreva a sua idade..."
+            autofocus
+          />
+          <br />
+          <label for="formEmail">Email:</label>
+          <input
+            id="formEmail"
+            name="formEmail"
+            type="email"
+            placeholder="Escreva a sua idade..."
+          />
+          <br />
+          <label for="phoneForm">Telemóvel:</label>
+          <input id="phoneForm" name="phoneForm" type="tel" />
+          <br />
+          <label for="passwordForm">Password:</label>
+          <input id="passwordForm" name="passwordForm" type="password" />
+          <br />
+          <label for="dateForm">Data de Nascimento:</label>
+          <input id="dateForm" name="dateForm" type="date" />
+          <br />
+
+          <label for="selectForm">Operadora:</label><br />
+          <label for="Vodafone">Vodafone:</label>
+          <input
+            id="Vodafone"
+            name="selectForm"
+            type="radio"
+            value="Vodafone"
+          />
+          <label for="NOS">NOS:</label>
+          <input id="NOS" name="selectForm" type="radio" value="NOS" />
+          <label for="Optimus">Optimus:</label>
+          <input id="Optimus" name="selectForm" type="radio" value="Optimus" />
+          <br />
+          <br />
+
+          <!-- CheckBoxs -->
+          <label for="checkbox">Equipamentos:</label>
+          <!-- <label for="SmartPhone">SmartPhone:</label> -->
+          <input
+            type="checkbox"
+            name="checkbox1"
+            id="SmartPhone"
+            value="SmartPhone"
+          />
+          <!-- <label for="TV">TV:</label> -->
+          <input type="checkbox" name="checkbox2" id="TV" value="TV" />
+          <br />
+          <!-- Selection/Options -->
+          <!-- falta label for this option -->
+          <select name="formSelect" id="formSelect">
+            <option value="" disabled selected>Escolha uma opção abaixo</option>
+            <option value="opcao1">opcao1</option>
+            <option value="opcao2">opcao2</option>
+            <option value="opcao3">opcao3</option>
+            <option value="opcao4">opcao4</option>
+          </select>
+          <br /><br />
+          <!-- textarea -->
+          <label for="textarea" textarea>Escreve um comentário</label><br />
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="SUBMETER" />
+        <input type="reset" value="RESET" />
+      </form>
+
+      <iframe src="https://www.google.pt/" frameborder="0"></iframe>
+
+      <script>
+        const handler = (event) => {
+          event.preventDefault();
+          console.log(event.target);
+          console.log(event.target.checkbox1.value);
+          console.log(event.target.selectForm.value);
+          console.log(event.target.formSelect.value);
+        };
+        document.getElementById("myForm").addEventListener("submit", handler);
+      </script>
     </main>
   </body>
 </html>

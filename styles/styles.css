@@ -9,10 +9,10 @@
 
 body {
   min-height: 100vh;
-}
-main {
   background-color: bisque;
+  scroll-behavior: smooth;
 }
+
 ol {
   margin: 2rem;
 }
