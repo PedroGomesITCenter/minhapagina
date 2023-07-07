@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <header
+      style="
+        background-color: red;
+        text-align: center;
+        border-radius: 25px;
+        padding: 10px;
+      "
+    >
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/secondPage.html">2Page</a></li>
+          <li><a href="/pages/formPage.html">Form</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        id="form1"
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        <label for="name">Name:</label>
+        <input name="name" type="text" placeholder="Write Something..." />
+        <label for="age">Age:</label>
+        <input name="age" type="number" />
+        <label for="comentario">comentario:</label>
+        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="SUBMETER FORM" />
+      </form>
+    </main>
+  </body>
+</html>

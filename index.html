@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <!-- Ligar favicon se não estiver na raiz -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- outras meta importantes em termos de SEO -->
+    <meta name="author" content="Pedro Gomes" />
+    <meta name="keywords" content="teste" />
+    <meta name="description" content="descrição" />
+
+    <!-- Ligar folha de CSS externa -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <!-- css in file -->
+    <style>
+      footer {
+        color: white;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      style="
+        background-color: red;
+        text-align: center;
+        border-radius: 25px;
+        padding: 10px;
+      "
+    >
+      <img
+        src="https://ewscripps.brightspotcdn.com/dims4/default/3e83bf9/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F11%2F70%2Fea39d0e54c38933d497ea3848566%2Fkm8.png"
+        alt=""
+        width="100%"
+      />
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/secondPage.html">2Page</a></li>
+          <li><a href="/pages/formPage.html">Form</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!-- referencia para scroll up, pode ser name ou id -->
+      <a name="TOPO"></a>
+      <!-- referencia para scroll up, pode ser name ou id -->
+      <h1 style="color: white; font-size: 50px; background-color: brown">
+        Hello World ✨
+      </h1>
+      <h2>Hello World</h2>
+      <h3>Hello World</h3>
+      <h4>Hello World</h4>
+      <h5>Hello World</h5>
+      <h6>Hello &nbsp;&nbsp;&nbsp;&nbsp; World</h6>
+      <p style="color: red">
+        Et aliqua eu ad aute esse <s>minim laboris</s> commodo elit do minim
+        laborum. Sunt consectetur tempor amet commodo eu cillum eiusmod. Tempor
+        irure ad laboris adipisicing irure adipisicing duis in veniam est.
+      </p>
+      <img
+        src="/images/man-wooden-cubes-table-management-concept.jpg"
+        alt="My image alternative text"
+        width="25%"
+        height="25%"
+        loading="lazy"
+      />
+      <img
+        src="/images/youtube.png"
+        alt="My image alternative text"
+        width="50"
+        height="50"
+        loading="lazy"
+      />
+      <a href="ddd" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/23/Cristiano_Ronaldo_WC2022_-_01.jpg"
+          alt="My image alternative text"
+          width="100"
+          loading="lazy"
+        />
+      </a>
+      <img src="ht" alt="ALT TEXT TEST" />
+      <span><strong>BOLD💩</strong>SPAN1</span>
+      <span><i>ITALICO😜</i>SPAN2</span>
+      <!-- comentario -->
+      <a href="https://www.google.com/" target="_blank"
+        >Link para Google new Page</a
+      >
+      <br />
+
+      <!-- script JS for button -->
+      <script>
+        const var1 = document.getElementsByTagName("main")[0];
+
+        const func = () => {
+          console.log("text test");
+          var1.style.backgroundColor = "green";
+        };
+      </script>
+
+      <button onclick="func()">Botão Console in Script Change Color</button>
+      <button onclick="alert('clicked')">Botão Alert in Line</button>
+    </main>
+    <hr />
+    <!-- referencia para scroll up -->
+    <a href="#TOPO">GO UP</a>
+    <footer style="background-color: blue; text-align: center">
+      &copy; All Rights Reserved | 2023
+    </footer>
+  </body>
+</html>
